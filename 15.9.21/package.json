@@ -1,0 +1,12 @@
+{
+  "name": "15.9.21",
+  "version": "1.0.0",
+  "description": "",
+  "blow": "index.js",
+  "scripts": {
+    "blow": "nodemon class.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
