@@ -1,0 +1,12 @@
+{
+  "name": "29.9.21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon class.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
