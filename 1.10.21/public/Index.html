@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- The grid: four columns -->
+    <div class="row">
+        <div class="column">
+        <img src="https://i.imgur.com/rnPzj94.jpg" alt="ai axmc" style="height: 200px;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="https://www.kalashnikov.ru/wp-content/uploads/2021/04/maxresdefault.jpg" style="height: 200px;" alt="barret mrad" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="https://i.ytimg.com/vi/oKjBBM4OTPo/maxresdefault.jpg" style="height: 200px;"alt="dt srs" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="https://i.pinimg.com/originals/de/91/aa/de91aac895815b3f49d58e2b71d84310.jpg" style="height: 200px;" alt="fn scar 17" onclick="myFunction(this);">
+        </div>
+    </div>
+    
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+    
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+    <script>
+        function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+    </script>
+</body>
+</html>

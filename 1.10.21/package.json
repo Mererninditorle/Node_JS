@@ -1,0 +1,12 @@
+{
+  "name": "1.10.21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon server_file.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
