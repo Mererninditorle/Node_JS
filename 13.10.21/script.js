@@ -22,6 +22,7 @@ app.get("/lop",(req,res) => {
 app.get("/active",(req,res) => {
     res.send("<h1>active</h1>");
 }); 
+
 app.listen(port, err => {
     console.log("Fail");
 });
