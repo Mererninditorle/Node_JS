@@ -5,7 +5,6 @@ let data = [
     {name: "Macos Wallpaper", src: "/images/a_4.jpg"},
     {name: "Circle", src: "/images/a_5.jpg"},
     {name: "Hypnotic", src: "/images/a_6.jpg"},
-    // {name: "Guest", src: "/images/guest.png"},
 ];
 
 const outer = document.querySelector(".container");
@@ -17,8 +16,6 @@ data.forEach(el => {
         >${el.name}</div>
     `;
 });
-
-
 
 let other = document.createElement("div");
 other.className = "card";
@@ -32,7 +29,7 @@ inp.addEventListener("click", e => {
 });
 inp.addEventListener("input", e => {
     e.target.parentElement.setAttribute("data-name", e.target.value);
-})
+});
 
 
 /* 
